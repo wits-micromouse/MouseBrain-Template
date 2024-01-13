@@ -7,7 +7,8 @@
 ```bash
 git submodule update --init --recursive
 mkdir bin
-cmake -S . -B ./bin/
+cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=1 -S . -B ./bin/
+
 ```
 
 ### Run
